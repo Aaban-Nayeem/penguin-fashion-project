@@ -3,21 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font - Babes neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/0cd0a45665.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Font - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Document</title>
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav class="flex h-20 items-center justify-evenly">
+    <header class="bg-[#FFFBF0]">
+      <nav class="flex h-20 items-center justify-around">
         <div>
-          <img src="./icons/logo.png" alt="" class="ml-12 w-1/4" />
+          <img src="./icons/logo.png" alt="" class="w-50" />
         </div>
-        <div class="mr-6 text-base font-medium text-[#3C3C3C]">
-          <ul class="flex">
+        <div class="mr-3 text-base font-medium text-[#3C3C3C]">
+          <ul class="font-roboto flex">
             <li class="mr-5">Home</li>
             <li class="mr-5">Product</li>
             <li class="mr-5">About Us</li>
@@ -25,20 +47,22 @@
           </ul>
         </div>
       </nav>
-      <section class="flex items-center justify-center">
+      <section
+        class="flex items-center justify-center sm:flex-col md:flex-row md:px-4"
+      >
         <div class="w-1/2">
-          <h3 class="text-7xl uppercase text-[#363958]">
+          <h3 class="font-bebas text-7xl uppercase text-[#363958]">
             <span class="text-7xl uppercase text-[#FABE4C]"
-              >Be the Penguins
-            </span>
+              >Be the Penguins </span
+            ><br />
             of Winter
           </h3>
-          <p class="py-5 text-base text-[#3E3E3E]">
+          <p class="font-roboto py-5 text-base text-[#3E3E3E]">
             Lorem Ipsum is simply dummy text of the printing <br />
             and typesetting industry.
           </p>
           <button
-            class="rounded-xl bg-[#A4BC46] px-5 py-4 text-base font-medium text-[#fff]"
+            class="font-roboto rounded-xl bg-[#A4BC46] px-5 py-4 text-base font-medium text-[#fff]"
           >
             <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i> BUY
             NOW
@@ -49,7 +73,94 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <main>
+      <section class="mx-auto my-0 w-4/5">
+        <h3 class="text-5xl uppercase text-[#363958]">woman jacket</h3>
+        <div class="flex">
+          <div class="font-roboto">
+            <img src="./images/jacket-1.png" alt="" class="w-1/2" />
+            <h3>Yellow Coat Jacket</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button
+              class="from-[#A4BC46]to-[#85A019] rounded-xl bg-gradient-to-r px-5 py-4 text-base font-medium text-[#fff]"
+            >
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+              BUY NOW
+            </button>
+          </div>
+          <div class="font-roboto">
+            <img src="./images/jacket-2.png" alt="" class="w-1/2" />
+            <h3>Ladies Jacket</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button
+              class="rounded-xl bg-[#A4BC46] px-5 py-4 text-base font-medium text-[#fff]"
+            >
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+              BUY NOW
+            </button>
+          </div>
+          <div class="font-roboto">
+            <img src="./images/jacket-3.png" alt="" class="w-1/2" />
+            <h3>Woman Leather Jacket</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button
+              class="rounded-xl bg-[#A4BC46] px-5 py-4 text-base font-medium text-[#fff]"
+            >
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+              BUY NOW
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3 class="text-5xl uppercase text-[#363958]">man jacket</h3>
+        <div class="flex justify-center">
+          <div class="font-roboto">
+            <img src="./images/jacket-4.png" alt="" class="bg-[#F1F1F1]" />
+            <h3></h3>
+            <p></p>
+            <button
+              class="rounded-xl bg-[#A4BC46] px-5 py-4 text-base font-medium text-[#fff]"
+            >
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+              BUY NOW
+            </button>
+          </div>
+          <div class="font-roboto">
+            <img src="./images/jacket-5.png" alt="" />
+            <h3></h3>
+            <p></p>
+            <button
+              class="rounded-xl bg-[#A4BC46] px-5 py-4 text-base font-medium text-[#fff]"
+            >
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+              BUY NOW
+            </button>
+          </div>
+          <div class="font-roboto">
+            <img src="./images/jacket-6.png" alt="" />
+            <h3></h3>
+            <p></p>
+            <button
+              class="rounded-xl bg-[#A4BC46] px-5 py-4 text-base font-medium text-[#fff]"
+            >
+              <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+              BUY NOW
+            </button>
+          </div>
+        </div>
+      </section>
+      <section></section>
+    </main>
     <footer></footer>
   </body>
 </html>
